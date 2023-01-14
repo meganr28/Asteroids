@@ -234,8 +234,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a744c11df94f4d49a29bf72338230fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSpeed: 0
-  thrustSpeed: 0
+  bullet: {fileID: 1845309055159450676, guid: e0f95ba492f244045ad285c9e9977b94, type: 3}
+  forceVector: {x: 0, y: 0, z: 0}
+  rotationSpeed: 0
+  rotation: 0
 --- !u!54 &147950413
 Rigidbody:
   m_ObjectHideFlags: 0
