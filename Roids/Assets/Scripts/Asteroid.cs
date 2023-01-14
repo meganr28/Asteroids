@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
+    public GameObject deathExplosion;
+    public int pointValue;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        pointValue = 10;
     }
 
     // Update is called once per frame
@@ -18,8 +21,11 @@ public class Asteroid : MonoBehaviour
 
     public void Die()
     {
-        // Destroy removes the gameObject from the scene and
-        // marks it for garbage collection
+        Instantiate(deathExplosion, gameObject.transform.position,
+        Quaternion.AngleAxis(-90, Vector3.right));
+        GameObject obj = GameObject.Find("GlobalObject");
+        Global g = obj.GetComponent<Global>();
+        g.score += pointValue;
         Destroy(gameObject);
     }
 }
