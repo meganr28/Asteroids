@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
+    public AudioClip deathKnell;
     public GameObject deathExplosion;
     public int pointValue;
 
@@ -21,8 +22,8 @@ public class Asteroid : MonoBehaviour
 
     public void Die()
     {
-        Instantiate(deathExplosion, gameObject.transform.position,
-        Quaternion.AngleAxis(-90, Vector3.right));
+        AudioSource.PlayClipAtPoint(deathKnell, gameObject.transform.position);
+        Instantiate(deathExplosion, gameObject.transform.position, Quaternion.AngleAxis(-90, Vector3.right));
         GameObject obj = GameObject.Find("GlobalObject");
         Global g = obj.GetComponent<Global>();
         g.score += pointValue;

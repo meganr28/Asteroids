@@ -127,5 +127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff6b0e91d050f6241be7057c165bfa61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathKnell: {fileID: 8300000, guid: 6c2c0a07e90b92349a2402fffc60d666, type: 3}
   deathExplosion: {fileID: 8873480549882527845, guid: af78afa1221a483479adeeff9cfc923d, type: 3}
   pointValue: 0
