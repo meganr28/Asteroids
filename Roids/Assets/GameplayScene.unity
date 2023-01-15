@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8949759dd883ab4e823df02060f3603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objToSpawn: {fileID: 0}
+  objToSpawn: {fileID: 8602273044843089558, guid: 6154961e1f8ccd242ba1fcfb80b9c506, type: 3}
   timer: 0
   spawnPeriod: 0
   numberSpawnedEachPeriod: 0
